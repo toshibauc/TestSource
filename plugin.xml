@@ -23,33 +23,13 @@
 
   <js-module src="test/tests.js" name="tests">
   </js-module>
-
-  <!-- ios -->
-  <platform name="ios">
-
-    <config-file target="config.xml" parent="/*">
-      <feature name="Toast">
-        <param name="ios-package" value="Toast"/>
-      </feature>
-    </config-file>
-
-    <header-file src="src/ios/Toast+UIView.h"/>
-    <source-file src="src/ios/Toast+UIView.m"/>
-    <header-file src="src/ios/Toast.h"/>
-    <source-file src="src/ios/Toast.m"/>
-
-    <framework src="QuartzCore.framework" />
-  </platform>
-
   <!-- android -->
   <platform name="android">
-
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="Toast">
         <param name="android-package" value="toshiba.test.plugins.Toast" />
       </feature>
     </config-file>
-
-    <source-file src="src/android/nl/xservices/plugins/Toast.java" target-dir="src/nl/xservices/plugins"/>
+    <source-file src="Toast.java" target-dir=""/>
   </platform>
 </plugin>
